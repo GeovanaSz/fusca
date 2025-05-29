@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #222;
+}
+
+header {
+  background-color: #f4c0c0;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  position: relative;
+}
+
+#fusca-img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#countdown {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.lado-a-lado {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+
+.imagem-lado {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+
+.lado-a-lado p {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.lado-a-lado {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+
+.imagens-verticais {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+  flex-shrink: 0; 
+}
+
+.imagem-pequena {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.lado-a-lado p {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .lado-a-lado {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagens-verticais {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .imagem-pequena {
+    max-width: 60px;
+  }
+}
+
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  border-bottom: 3px solid #ffa4a4;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  color: #dc6060;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 600px) {
+  .lado-a-lado {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-lado {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.timer{
+    text-align: center;
+    color: white;
+}
